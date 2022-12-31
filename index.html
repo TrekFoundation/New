@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+      
+      body {
+        
+        background-color: white;
+      }
+      .lead {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid" style="background-image: url('image.jpg'); background-size: cover;">
+      <div class="container">
+        <h1 class="display-4">Welcome to Asura</h1>
+        <p class="lead">Asura is a chatting app.Here you can chat with someone you know or not</p>
+
+        <a href="https://www.mediafire.com/file/mz5dad2yc3huc8m/app-release.apk/file" class="btn btn-primary">Download Asura</a>
+      </div>
+    </div>
+    
+    <p class="lead"> I hope that you have downloaded the apk file it's time to install it on your device.Have a good chat</p>
+
+    <script>
+      const downloadButton = document.querySelector('.btn-primary');
+      downloadButton.addEventListener('click', () => {
+        // Track the download event
+        // You can use a service like Google Analytics to do this
+        ga('send', 'event', {
+          eventCategory: 'Download',
+          eventAction: 'click',
+          eventLabel: 'Download Button',
+        });
+      });
+    </script>
+  </body>
+</html>
+
